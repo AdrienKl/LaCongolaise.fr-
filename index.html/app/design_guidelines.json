@@ -1,0 +1,137 @@
+{
+  "project_name": "La Congolaise",
+  "design_philosophy": {
+    "persona": "E1: The Anti-AI Designer",
+    "theme": "The Spice Route Fusion",
+    "core_concept": "Authentic Congolese warmth meets French Brasserie structure. A sensory experience of earth, fire, and spice.",
+    "emotional_tone": "Warm, Rhythmic, Welcoming, Textured, Spicy",
+    "visual_style": "Organic Modernism. No flat colors—everything has depth or texture."
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Playfair Display, serif",
+      "usage": "All H1, H2, H3. Use for emotional impact.",
+      "weights": ["600", "800"],
+      "letter_spacing": "tracking-tight"
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "usage": "Paragraphs, UI elements, Buttons.",
+      "weights": ["400", "500", "700"],
+      "letter_spacing": "tracking-normal"
+    },
+    "accents": {
+      "font_family": "Caveat, cursive",
+      "usage": "Small decorative notes, 'Chef's Special' tags.",
+      "weights": ["400"]
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": "#E07A5F",
+      "primary_foreground": "#F4F1DE",
+      "secondary": "#2D4030",
+      "secondary_foreground": "#F4F1DE",
+      "accent": "#F2CC8F",
+      "accent_foreground": "#2D4030",
+      "background": "#F4F1DE",
+      "foreground": "#3D405B",
+      "card": "#FFFFFF",
+      "card_foreground": "#3D405B",
+      "muted": "#F2CC8F",
+      "muted_foreground": "#6B705C",
+      "border": "#D4A373",
+      "input": "#E0E0E0",
+      "ring": "#E07A5F"
+    },
+    "usage_rules": {
+      "background_strategy": "Never use pure white (#FFFFFF) for the main page background. Use 'Warm Sand' (#F4F1DE).",
+      "gradient_strategy": "Avoid linear gradients. Use radial gradients for 'spotlight' effects on food.",
+      "text_contrast": "Ensure #3D405B is used for body text for softness, but switch to #1A1C23 for small text if readability fails."
+    }
+  },
+  "layout_strategies": {
+    "grid_system": "The Bento Grid (Mode A)",
+    "spacing": "Generous. Use p-8 to p-16 for section padding. Allow the content to breathe.",
+    "container_width": "max-w-7xl mx-auto",
+    "mobile_first": "Stack vertically on mobile, expand to asymmetric grid on lg screens."
+  },
+  "components": {
+    "buttons": {
+      "style": "Pill-shaped (rounded-full).",
+      "base_classes": "bg-primary text-primary-foreground px-8 py-4 font-bold shadow-lg hover:scale-105 transition-transform duration-200",
+      "secondary_classes": "bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+    },
+    "cards": {
+      "style": "Organic Card.",
+      "base_classes": "bg-card rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-border/20 overflow-hidden hover:shadow-xl transition-shadow duration-300",
+      "content_padding": "p-6 md:p-8"
+    },
+    "inputs": {
+      "style": "Underlined or Soft Fill.",
+      "base_classes": "bg-white/50 border-b-2 border-primary/30 focus:border-primary focus:bg-white transition-colors rounded-t-md px-4 py-3"
+    },
+    "navigation": {
+      "style": "Floating Glass.",
+      "base_classes": "fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-white/80 backdrop-blur-md border border-white/20 rounded-full px-8 py-3 shadow-lg flex gap-6 items-center"
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Use a subtle 'noise' overlay (opacity 0.03) on the entire body to mimic paper/grain.",
+    "shadows": "Soft, diffuse, warm shadows. e.g., shadow-[0_20px_50px_-12px_rgba(224,122,95,0.25)]",
+    "border_radius": "rounded-2xl for cards, rounded-full for buttons.",
+    "icons": "Lucide React. Use thin strokes (1.5px) for elegance."
+  },
+  "motion": {
+    "library": "framer-motion",
+    "principles": [
+      "Slow, simmering entrances (duration: 0.8s, ease: easeOut).",
+      "Stagger children elements by 0.1s.",
+      "Parallax effect on food images during scroll."
+    ],
+    "reduced_motion": "Respect prefers-reduced-motion media query."
+  },
+  "images": {
+    "hero_section": {
+      "url": "https://images.unsplash.com/photo-1725393325387-07f0d4951528?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxjb25nb2xlc2UlMjBmb29kJTIwZnVmdSUyMHBsYW50YWlucyUyMGdyaWxsZWQlMjBmaXNofGVufDB8fHx8MTc2NTA0NjY0MHww&ixlib=rb-4.1.0&q=85",
+      "alt": "Delicious Grilled Fish with Plantains",
+      "usage": "Full width hero background or large featured image."
+    },
+    "about_section": {
+      "url": "https://images.unsplash.com/photo-1592498542930-4254dc73cbb5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwyfHxjaGVmJTIwY29va2luZyUyMGFmcmljYW4lMjBmb29kJTIwa2l0Y2hlbnxlbnwwfHx8fDE3NjUwNDY2NDR8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Chef preparing authentic Congolese dishes",
+      "usage": "Side-by-side with 'Our Story' text."
+    },
+    "ambiance_section": {
+      "url": "https://images.unsplash.com/photo-1720799359126-2cda1a741c52?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwxfHx3YXJtJTIwYWZyaWNhbiUyMHJlc3RhdXJhbnQlMjBpbnRlcmlvciUyMGRpbmluZyUyMGF1dGhlbnRpY3xlbnwwfHx8fDE3NjUwNDY2NDJ8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Warm and welcoming restaurant interior",
+      "usage": "Background for reviews or location section."
+    },
+    "food_gallery": [
+      "https://images.unsplash.com/photo-1612426357506-8b66a851fbe6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxjb25nb2xlc2UlMjBmb29kJTIwZnVmdSUyMHBsYW50YWlucyUyMGdyaWxsZWQlMjBmaXNofGVufDB8fHx8MTc2NTA0NjY0MHww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1642741580389-87dd75d913f4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxjb25nb2xlc2UlMjBmb29kJTIwZnVmdSUyMHBsYW50YWlucyUyMGdyaWxsZWQlMjBmaXNofGVufDB8fHx8MTc2NTA0NjY0MHww&ixlib=rb-4.1.0&q=85"
+    ]
+  },
+  "accessibility": {
+    "contrast_check": "Ensure all text on #E07A5F (Primary) is #F4F1DE (Light Sand) or White. Do not use black on primary.",
+    "aria_labels": "Required for all icon-only buttons.",
+    "focus_states": "Visible ring-2 ring-offset-2 ring-primary."
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALL FONTS: Add 'Playfair Display' and 'Manrope' from Google Fonts in index.css.",
+    "2. UPDATE TAILWIND: Copy the color palette into tailwind.config.js extending the theme.",
+    "3. CREATE COMPONENTS: Build the 'ReviewForm' using Shadcn Form + Input, but style it with the 'Organic Card' aesthetics defined above.",
+    "4. MAPS: Use an iframe for Google Maps (2 Rue Pierre de Ronsard 41000 Blois) inside a rounded-2xl container with overflow-hidden.",
+    "5. TRANSLATION: Implement a simple state-based toggle (FR/EN) that switches text content. No complex i18n library needed for MVP.",
+    "6. REVIEWS: Mock the MongoDB connection if backend is not ready, but build the UI to handle dynamic rating averages.",
+    "7. NOISE TEXTURE: Add a fixed position div with a noise background image and pointer-events-none to overlay the whole site."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not use generic centered layouts.",
+    "Create depth through layered design elements.",
+    "Use glass-morphism effects with backdrop filters.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Subtle grain textures and noise overlays are mandatory."
+  ]
+}
